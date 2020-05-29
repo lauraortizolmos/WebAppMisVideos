@@ -13,6 +13,7 @@ El apartado "Iniciar sesión" muestra un formulario que como su nombre lo indica
 Una vez inicida la sesión en la barra de navegación se muestra una lista desplegable "Opciones" y en esta tenemos dos 
 alternativas ir al "Perfil" o "Cerrar sesión". Dentro de "Perfil" en la sección "Panel de control" podemos realizar algunas acciones como "Agregar un vídeo" o "Ir a mis videos" este apartado está pensando para que el usuario pueda realizar alguna acciones como "Agregar", "Borrar" o "Editar" algún vídeo.
 Para poder calificar un vídeo se necesita haber ingresado, sin este requisito no es posible dar una calificación a alguno de los videos que se muestran.
+Para poder acceder a los datos desde cualquier aplicación del listado de los vídeos se se tiene una API Rest que permite mostrar los vídeos con fecha de captura mas reciente y generando una cadena JSON 100% valida.
 En esta aplicación se hace uso de NodeJS,Express, Passport.js como middleware de autenticación para Node.js, CSS, Bootstrap4, y Handlebars para estilizar la webapp y librerías de express para conexión a Mysql.
 
 # Handlebars.js
@@ -36,6 +37,19 @@ Es un entorno de tiempo de ejecución de JavaScript (de ahí su terminación en 
 Todas las páginas y blogs que se muestran en la red han de tener un dominio y un hosting. El dominio es el nombre que va a tener la web en Internet, y el hosting es el espacio o el lugar en el que vas a alojar tu página, por lo que también es conocido como alojamiento web. Existen diferentes tipos de hosting y se diferencian en el espacio de almacenamiento o en si son de pago o gratuitos.
 
 FreeMysqlHosting es un alojamiento web gratuito que con solo registarse te permite tener acceso a una base de datos remota. En este freehosting no pagaras nada, y si tienes más de un correo electrónico, puedes crearte varias cuentas y disponer de varios planes de hosting gratuito a la vez.
+
+# Api Rest.
+REST es el estándar más lógico, eficiente y habitual en la creación de APIs para servicios de Internet.
+REST es cualquier interfaz entre sistemas que use HTTP para obtener datos o generar operaciones sobre esos datos en todos los formatos posibles, como XML y JSON. Es una alternativa en auge a otros protocolos estándar de intercambio de datos como SOAP (Simple Object Access Protocol), que disponen de una gran capacidad pero también mucha complejidad. 
+Hoy en día las API REST están en un gran apogeo ya que la mayoría hace uso de esta tecnología para poder como menciono, enviar y recibir datos de forma sencilla y rápida, aunque una tecnología que está en crecimiento es el GraphQL que busca reemplazar a las API REST para hacerlas aún más sencillas y a la vez más robustas.
+Las API REST aprovechan los métodos HTTP, desde un simple POST o GET hasta métodos personalizados, sin embargo, nosotros veremos únicamente POST, GET, PUT y DELETE en su forma más sencilla y las Headers que son para autenticación, decirle qué tipo de dato va.
+
+# Caracteristicas Rest.
+* Protocolo cliente/servidor sin estado: cada petición HTTP contiene toda la información necesaria para ejecutarla, lo que permite que ni cliente ni servidor necesiten recordar ningún estado previo para satisfacerla. Aunque esto es así, algunas aplicaciones HTTP incorporan memoria caché. 
+* Las operaciones más importantes relacionadas con los datos en cualquier sistema REST y la especificación HTTP son cuatro: POST (crear), GET (leer y consultar), PUT (editar) y DELETE (eliminar).
+* Los objetos en REST siempre se manipulan a partir de la URI. 
+* Interfaz uniforme.
+* Sistema de capas: arquitectura jerárquica entre los componentes.
 
 # Resultado.
 ![Captura de pantalla (242)](https://user-images.githubusercontent.com/61463784/83242846-b001db00-a162-11ea-9905-4fab96896acb.png)
