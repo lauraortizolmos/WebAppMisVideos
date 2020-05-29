@@ -1,6 +1,6 @@
 # Web App Mis Videos
-# Proyecto final.
-# Programción web.
+### Proyecto final.
+### Programción web.
 # Descripcion de Web App.
 En este reositorio se aprendio a crear una aplicación web Backend y Frontend, utilizando Nodejs, Mysql, Express y otras tecnologías de Javascript. En este ejemplo creamos una aplicacion de videos, con un Login y Registro utilizando Mysql, ademas de proteger nuestras rutas del servidor y estilizar nuestra aplicación con CSS, Bootstrap4, y Handlebars.
 El diseño de esta app web cuenta con una barra de navegación con cuatro apartados:
