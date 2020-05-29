@@ -38,4 +38,12 @@ Todas las páginas y blogs que se muestran en la red han de tener un dominio y u
 FreeMysqlHosting es un alojamiento web gratuito que con solo registarse te permite tener acceso a una base de datos remota. En este freehosting no pagaras nada, y si tienes más de un correo electrónico, puedes crearte varias cuentas y disponer de varios planes de hosting gratuito a la vez.
 
 # Resultado.
+![Captura de pantalla (242)](https://user-images.githubusercontent.com/61463784/83242846-b001db00-a162-11ea-9905-4fab96896acb.png)
+![Captura de pantalla (247)](https://user-images.githubusercontent.com/61463784/83242860-b5f7bc00-a162-11ea-9952-995bcb2c9e42.png)
+![Captura de pantalla (248)](https://user-images.githubusercontent.com/61463784/83242866-b85a1600-a162-11ea-8edc-db24e5f5524c.png)
+![Captura de pantalla (249)](https://user-images.githubusercontent.com/61463784/83242907-c3ad4180-a162-11ea-96ff-4dc14cd2a465.png)
+![Captura de pantalla (250)](https://user-images.githubusercontent.com/61463784/83242956-d58ee480-a162-11ea-9dc0-9056c2ecda76.png)
+![Captura de pantalla (251)](https://user-images.githubusercontent.com/61463784/83242976-dcb5f280-a162-11ea-9dc6-f034503d3d0d.png)
+![Captura de pantalla (252)](https://user-images.githubusercontent.com/61463784/83242980-de7fb600-a162-11ea-9a71-cde9808cc1e3.png)
+![Captura de pantalla (253)](https://user-images.githubusercontent.com/61463784/83242995-e3446a00-a162-11ea-88b0-e05911a3b270.png)
 
