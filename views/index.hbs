@@ -1,0 +1,110 @@
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Web App Mis Videos Favoritos</h1>
+        <br><br/>
+         <img class="masthead-avatar mb-5" 
+                src="/img/buscar.png" alt="" />
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <h1 class="masthead-subheading font-weight-light mb-0">
+            Disfruta y almacena tus videos favoritos.</h1>
+    </div>
+</header>
+
+
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Listado de videos</h2>
+        <div class="divider-custom divider-light1">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+        </div>
+        <br> <br>
+        <!-- Portfolio Grid Items-->
+        <div class="row">
+            {{#each data}}
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                                    <a class="portfolio-link" href="/detail/{{id}}">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i
+                                class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <iframe class="img-fluid" width="397" height="260" src="{{url}}" frameborder="0"
+                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h4  align="center" class="card-title text-uppercase">
+                        {{name}}
+                    </h4>
+                    </a>
+<div  align="center">
+
+                    <h4 class="card-title text-uppercase">
+                        {{red_name}}
+                    </h4>
+                    <p class="card-title text-uppercase">
+                        {{category}}
+                    </p>
+
+                        <p>{{username}}</p>
+
+                 
+                     {{#if voto}}
+                <div>
+                    <label><i class="fas fa-heart" style="color: red;"></i> {{voto}}/3 </label>
+                </div>
+                {{else}}
+                <div>
+                    <label><i class="fas fa-heart-broken"></i> 0/3 </label>
+                </div>
+
+                {{/if}}
+                </div>
+            </div>                
+            </div>
+
+
+        {{/each}}
+                </div>
+
+</section>
+<!-- About Section-->
+<section class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <h2 class="page-section-heading text-center text-uppercase text-white">Datos del alumno.</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <img class="masthead-avatar mb-5" 
+                src="img/team/1.jpg" alt="" />
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                    <div class="masthead-subheading font-weight-light mb-0">
+                        <p>Laura Cristina Ortiz Olmos</p>
+                        <p class="masthead-subheading font-weight-light mb-0">
+                            Estudiante de Ingenieria en Tecnologías de Información 
+                            y comunicaciones.</p>
+                        <p class="masthead-subheading font-weight-light mb-0">
+                           No. control 17240817.</p>
+                    </div>
+            </div>      
+        </section>
+
+{{>footer}}

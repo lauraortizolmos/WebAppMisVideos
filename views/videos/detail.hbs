@@ -1,0 +1,74 @@
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Web App Mis Videos Favoritos</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <img class="masthead-avatar mb-5" 
+                src="/img/video.png" alt="" />
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">{{data.name}}</p>
+    </div>
+</header>
+
+      <div class="modal-body text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <!-- Portfolio Modal - Title-->
+              </h2>
+
+              <!-- Icon Divider-->
+             <br><br>
+               <iframe width="647" height="410" src="{{data.url}}" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{data.name}}</h2>
+                <a href="/user_videos/{{data.id}}">
+               <h2 >{{data.username}}</h2></a>
+
+              <!-- Portfolio Modal - Text-->
+              <p class="mb-5"> {{data.description}}</p>
+              
+      {{#if user}}
+
+      <form action="/detail/{{data.video_id}}" method="POST">
+        <div>
+          <input id="1" type="radio" name="votos" value="1">
+        <label for="1"  ><i class="fas fa-heart"></i></label>
+          <input id="2" type="radio" name="votos" value="2">
+          <label for="2"><i class="fas fa-heart"></i></label>
+          <input id="3" type="radio" name="votos" value="3">
+          <label for="3"><i class="fas fa-heart"></i></label> 
+        </div>
+        <button id="votarButton" type="submit"  class="btn btn-primary">
+          Votar
+        </button>
+      </form>
+      {{/if}}
+
+      {{#each prom}}
+        <p>Votos</p>
+
+              {{#if prom}}
+        <div>
+          <label><i class="fas fa-heart" style="color: red;"></i> {{prom}}/3 </label>
+        </div>
+                  {{else}}
+                      <div>
+          <label><i class="fas fa-heart-broken"></i> 0/3 </label>
+        </div>
+
+              {{/if}}
+
+      {{/each}}
+              
+            </div>
+          </div>
+        </div>
+      </div>
+ {{>footer}}

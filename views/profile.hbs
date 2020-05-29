@@ -1,0 +1,53 @@
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">{{user.fullname}}</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+         <img class="masthead-avatar mb-5" 
+                src="/img/avataaars.svg" alt="" />
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">{{user.username}}</p>
+    </div>
+</header>
+
+
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Panel de control</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="div-video"  align="center">
+
+
+            <a href="/videos/add">
+                            <div>Agregar un video</div>
+                    <i id="desvanecer" class="fas fa-plus-circle fa-7x "></i>
+            </a>
+        </div><br><br>
+
+         <div class="div-video" align="center">
+
+
+            <a href="/videos">
+                <div>Ir a mis videos</div>
+                    <i class="fas fa-video fa-7x"></i>
+            </a>
+        </div>
+        </div>
+        
+
+
+</section>
+ {{>footer}}

@@ -1,0 +1,79 @@
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+         <img class="masthead-avatar mb-5" 
+                src="/img/avataaars.svg" alt="" />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">{{username.username}}</h1>
+        <!-- Icon Divider-->
+        <br><br/>
+        
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Listado de videos</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row">
+            {{#each data}}
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <a class="portfolio-link" href="/detail/{{id}}">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <iframe class="img-fluid" width="397" height="260" src="{{url}}" frameborder="0"
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <input value="{{voto}}" class="votos">
+                        <h4 align="center" class="card-title text-uppercase">
+                            {{name}}
+                        </h4>
+                </a>
+<div  align="center">
+                <h4 class="card-title text-uppercase">
+                    {{red_name}}
+                </h4>
+                <p class="card-title text-uppercase">
+                    {{category}}
+                </p>
+                <p>Votos</p>
+
+                {{#if voto}}
+                <div>
+                    <label><i class="fas fa-heart" style="color: red;"></i> {{voto}}/3 </label>
+                </div>
+                {{else}}
+                <div>
+                    <label><i class="fas fa-heart-broken"></i> 0/3 </label>
+                </div>
+
+                {{/if}}
+</div>
+            </div>
+        </div>
+
+        {{/each}}
+    </div>
+
+</section>
+
+{{>footer}}
