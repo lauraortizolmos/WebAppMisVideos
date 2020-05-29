@@ -1,6 +1,5 @@
 # Web App Mis Videos
-### Proyecto final.
-### Programción web.
+### Proyecto final. Programción web. Laura Cristina Ortiz Olmos.
 # Descripcion de Web App.
 En este reositorio se aprendio a crear una aplicación web Backend y Frontend, utilizando Nodejs, Mysql, Express y otras tecnologías de Javascript. En este ejemplo creamos una aplicacion de videos, con un Login y Registro utilizando Mysql, ademas de proteger nuestras rutas del servidor y estilizar nuestra aplicación con CSS, Bootstrap4, y Handlebars.
 El diseño de esta app web cuenta con una barra de navegación con cuatro apartados:
@@ -10,7 +9,9 @@ La primera nos muestra un listado de vídeos, los vídeos mostrados tiene inform
 "Nombre", "Red social" y "Categoría", también en cada uno de los videos mostrados en el listado viene el usuario y una calificación.
 En la siguiente sección se encuentran los datos del alumno, como "Nombre", "Formación", "Dirección" y "Redes sociales".
 En "Registrarse" el diseño nos muestra un formulario con alguno datos para poder crear una cuenta dentro de la web app.
-El apartado "Iniciar sesión" muestra un formulario que como su nombre lo indica permite al usuario ingresar a su perfil. Una vez inicida la sesión en la barra de navegación se muestra una lista desplegable "Opciones" y en esta tenemos dos alternativas ir al "Perfil" o "Cerrar sesión". Dentro de "Perfil" en la sección "Panel de control" podemos realizar algunas acciones como "Agregar un vídeo" o "Ir a mis videos" este apartado está pensando para que el usuario pueda realizar alguna acciones como "Agregar", "Borrar" o "Editar" algún vídeo.
+El apartado "Iniciar sesión" muestra un formulario que como su nombre lo indica permite al usuario ingresar a su perfil. 
+Una vez inicida la sesión en la barra de navegación se muestra una lista desplegable "Opciones" y en esta tenemos dos 
+alternativas ir al "Perfil" o "Cerrar sesión". Dentro de "Perfil" en la sección "Panel de control" podemos realizar algunas acciones como "Agregar un vídeo" o "Ir a mis videos" este apartado está pensando para que el usuario pueda realizar alguna acciones como "Agregar", "Borrar" o "Editar" algún vídeo.
 Para poder calificar un vídeo se necesita haber ingresado, sin este requisito no es posible dar una calificación a alguno de los videos que se muestran.
 En esta aplicación se hace uso de NodeJS,Express, Passport.js como middleware de autenticación para Node.js, CSS, Bootstrap4, y Handlebars para estilizar la webapp y librerías de express para conexión a Mysql.
 
