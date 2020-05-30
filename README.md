@@ -8,6 +8,7 @@ En "Registrarse" el diseño nos muestra un formulario con alguno datos para pode
 
 # Ruta API
 https://proyecto-final-tau.now.sh/api/
+https://proyecto-final-tau.now.sh/api/users
 
 ![Captura de pantalla (256)](https://user-images.githubusercontent.com/61463784/83318106-37992980-a1f7-11ea-86a2-b2bec5f71aae.png)
 ![Captura de pantalla (257)](https://user-images.githubusercontent.com/61463784/83318109-39fb8380-a1f7-11ea-95da-c1660196081d.png)
