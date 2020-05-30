@@ -9,6 +9,10 @@ En "Registrarse" el diseño nos muestra un formulario con alguno datos para pode
 # Ruta API
 https://proyecto-final-tau.now.sh/api/
 
+![Captura de pantalla (256)](https://user-images.githubusercontent.com/61463784/83318106-37992980-a1f7-11ea-86a2-b2bec5f71aae.png)
+![Captura de pantalla (257)](https://user-images.githubusercontent.com/61463784/83318109-39fb8380-a1f7-11ea-95da-c1660196081d.png)
+
+
 # Handlebars.js
 Handlebars.js es un motor de plantillas muy popular que es potente, fácil de utilizar y que cuenta con una gran comunidad. Se basa en el lenguaje de plantillas Mustache, pero lo mejora de distintas maneras. Handlebars, tiene la funcionalidad de separar el diseño HTML del resto de tu Javascript, para así escribir código mucho más limpio.
 
